@@ -1,0 +1,27 @@
+git config --global user.email "emailId"
+git config --global user.name "username"
+
+
+Git Commands:
+1) git init : Inside our project.
+2) git status : To know files status in git folder.
+3) git add file_name : To add file in stagging area.
+3.1) git add . : To add all files in stagging area. 
+4) git commit -m "description_msg" : To commit file in git. 
+5) git remote add origin "location_remote_repo" : To add remote repo in our git repo.
+6) git push -u origin master : To add git repo to github repo.
+7) git branch "branchName" : To create new branch 
+8) git checkout "branchName" : To checkout on new branch.
+9) git merge "branchName" : First checkout to master branch and then merge subBranch with that.
+10) git branch -D "branchName" : To delete local branch
+11) git push origin --delete "branchName" : To delete branch from remote repo.
+
+Utility Commands : 
+1) git log : To know what all has been done in git. 
+2) git pull : To fetch and merge remote repo into local repo
+3) git fetch : To fetch remote repo into local repo.
+4) git pull --rebase : To pull only changes
+
+
+Points to Ponder : 
+1) Diff between Fork and Clone.
