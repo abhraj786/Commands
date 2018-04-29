@@ -1,0 +1,19 @@
+To launch oauth flow : sfdx force:auth:web:login -r https://login.salesforce.com
+To set default global name : sfdx force:config:set defaultdevhubusername=abhishek.raj@sforcedx1.com --global
+To set up SFDX project : sfdx force:project:create -n AbhishekDXProject
+To create scratch org : sfdx force:org:create -f project-scratch-def.json -a ScratchOrg1
+To open scratch org :  sfdx force:org:open -u <username>
+To set default username of scratch org : sfdx force:config:set defaultusername=test-6wtx4flsotxa@example.com
+To pull components from scratch orgs to local : sfdx force:source:pull
+To push components from local to scratch orgs : sfdx force:source:push
+TO check status : sfdx force:source:status
+To pull any managed/unmanaged package code in local directory : sfdx force:mdapi:retrieve -s -r ./temp2 -u abhishek.raj@trailhead.com -p "packagename"
+To convert metadata api project into salesforce dx project: sfdx force:mdapi:convert -r ../temp
+To convert salesforce dx project into metadata api format : sfdx force:source:convert --outputdir mdapi_output_dir
+To deploy metadata format project into salesforce instance : sfdx force:mdapi:deploy --deploydir mdapi_output_dir
+To know status of deployment : sfdx force:mdapi:deploy:report
+
+
+
+
+ 
